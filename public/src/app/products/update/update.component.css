@@ -1,0 +1,29 @@
+label {
+    width: 150px;
+    font-size: 150%;
+    color: gray;
+}
+ul {
+    list-style-type: none;
+}
+button {
+    margin-right: 10px;
+    margin-left: 150px;
+}
+.errors {
+    font-size: 90%;
+    font-weight: bold;
+    color: purple;
+}
+#updateButton {
+    background-color: #99FF99;
+    color: #676967;
+    border-radius: 5px;
+    padding: 3px;
+}
+.resetButton {
+    background-color: #E1D5E7;
+    color: #676967;
+    border-radius: 5px;
+    padding: 3px;
+}

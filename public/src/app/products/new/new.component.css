@@ -1,0 +1,29 @@
+label {
+    width: 150px;
+    font-size: 150%;
+    color: gray;
+}
+button {
+    margin-right: 10px;
+    margin-left: 150px;
+}
+ul {
+    list-style-type: none;
+}
+.errors {
+    font-size: 90%;
+    font-weight: bold;
+    color: red;
+}
+.resetButton {
+    background-color: #E1D5E7;
+    color: #676967;
+    border-radius: 5px;
+    padding: 3px;
+}
+.createButton {
+    background-color: #66BBFF;
+    color: #676967;
+    border-radius: 5px;
+    padding: 3px;
+}

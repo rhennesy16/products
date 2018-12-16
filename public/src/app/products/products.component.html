@@ -1,0 +1,29 @@
+<h2>Product List</h2>
+<a [routerLink]="['new']"><button id="aButton">Add New Product</button></a>
+<br>
+<ul *ngIf="errors">
+    <li class="errors" *ngFor="let error of errors">{{error}}</li>
+  </ul>
+<table class="table table-bordered">
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of allProducts">
+            <td>{{product._id}}</td>
+            <td>{{product.name | titlecase}}</td>
+            <td>{{product.qty}}</td>
+            <td>{{product.price | currency:'USD'}}</td>
+            <td>
+                <div class="goLeft">
+                    <a [routerLink]="[product._id, 'edit']"><button  class="fancyButton" >edit</button></a>
+                    <a [routerLink]="[product._id]"><button  class="fancyButton">details</button></a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

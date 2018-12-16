@@ -1,0 +1,32 @@
+<h2>Update Product</h2>
+<ul *ngIf="errors">
+  <li class="errors" *ngFor="let error of errors">{{error}}</li>
+</ul>
+<div  *ngIf="updatedProduct">  
+  <form name="editProductForm" #editProductForm="ngForm" (submit)="updateProduct()">
+    <label for="name">Name</label>
+    <input type="text" name="name"
+    required
+    minlength="3"
+    [(ngModel)]="updatedProduct.name"
+    #name = "ngModel"
+    >
+    <br>
+    <label for="qty">Qty</label>
+    <input type="number" name="qty"
+    required
+    [(ngModel)]="updatedProduct.qty"
+    #qty="ngModel"
+    >
+    <br>
+    <label for="price">Price</label>
+    <input type="number" name="price"
+    required
+    [(ngModel)]="updatedProduct.price"
+    #price="ngModel"
+    >
+    <br>
+    <a [routerLink]="['/']"><button class="resetButton">RESET</button></a>
+    <input  id="updateButton" type="submit" value="UPDATE">
+  </form>
+</div>

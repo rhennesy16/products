@@ -1,0 +1,27 @@
+.td {
+    font-size: 150%;
+    color: gray;
+    width: 100px;
+}
+table {
+    margin: 0 10px;
+}
+.btn-danger {
+    margin-left: 10px;
+}
+.resetButton {
+    background-color: #E1D5E7;
+    color: #676967;
+    border-radius: 5px;
+    padding: 3px;
+}
+.deleteButton {
+    margin-left: 10px;
+    background-color: #FF0000;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+}
+a {
+    margin-left: 100px;
+}

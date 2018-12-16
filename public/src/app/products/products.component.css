@@ -1,0 +1,31 @@
+h2, button {
+    display: inline-block;
+}
+h2 {
+    float: left;
+    margin-top: 0;
+}
+button, a {
+    float: right;
+}
+th {
+    background-color: #D3D3D3;
+    color: white;
+    padding: 5px;
+}
+.fancyButton {
+    background: linear-gradient(#E4C1C1, #4B5E6D);
+    color: white;
+    margin: 0 5px;
+}
+#aButton {
+    background: linear-gradient(#E7F1E6, #49606E);
+    color: white;
+    padding: 0 10px;
+}
+.rightMarg {
+    margin-right: 200px;
+}
+.goLeft {
+    float: left;
+}
